@@ -84,7 +84,7 @@ Controls
 ### Technical Controls 
 | Control Name | Control type | Explanation | Needs to be implemented (X) | Priority |
 | --- | --- | --- | --- | --- |
-| Firewall | Preventative| Firewalls **are already in place** to block unwanted/malicious traffic from entering organization's internal network. | NA | NA |
+| Firewall | Preventative| **Already in place.** Firewalls block unwanted/malicious traffic from entering organization's internal network. | NA | NA |
 | Intrusion Detection System (IDS) | Detective | Allows Security teams to identify potential intrusions (e.g., DoS Attacks). | X | High |
 | Encryption | Deterrent | Makes confidential information/data more secure by making it unreadable (e.g., payment transactions) | X | High |
 | Backups | Corrective | Supports business continuity in the case of an event; aligns to the disaster recovery plan | X | High |
@@ -101,3 +101,33 @@ Controls
 | Signage indicating alarm service provider | Deterrent | Acts as a visible deterrent and informs potential intruders of the security measures in place, deterring unauthorized access and enhancing overall security awareness. | X | Low |
 | Locks | Deterrent/Preventative | **Already in place.** Essential physical security measures that prevent unauthorized entry to restricted areas, safeguarding assets and maintaining confidentiality. | NA | NA |
 | Fire detection and prevention (fire alarm, sprinkler system, etc.) | Detective/Preventative | **Already in place.** Detect fire in the toy store’s physical location to prevent damage to inventory, servers, etc. | NA | NA |
+
+Compliance Requirements
+--------------
+
+### General Data Protection Regulation (GDPR)
+GDPR is a European Union regulation that protects the processing of E.U. citizens' data and their right to privacy. Botium Toys needs to comply with GDPR as they are expanding their services to handle the data of customers in the European Union. GDPR requires that if a breach compromises an E.U. citizen's data, they must be informed within 72 hours, emphasizing the importance of data privacy and security.
+| Practice | Compliant | Comment | Explanation |
+| --- | --- | --- | --- |
+| E.U. customers’ data is kept private/secured | ❌ | The company does not currently use encryption to better ensure the confidentiality of customers’ financial information.| Ensuring the privacy and security of E.U. customers' data helps protect sensitive information from unauthorized access and potential breaches, complying with GDPR and building customer trust. |
+| Plan to notify E.U. customers within 72 hours of a breach | ✔ | There is a plan to notify E.U. customers within 72 hours of a data breach.| Having a plan to inform E.U. customers within 72 hours of a data breach ensures compliance with GDPR requirements and allows affected individuals to take timely protective measures. |
+| Ensure data is properly classified and inventoried | ❌ | Current assets have been inventoried/listed, but not classified.| Proper classification and inventory of data help identify and prioritize the protection of sensitive information, reducing the risk of unauthorized access and data breaches. |
+| Enforce privacy policies to maintain data | ✔ | Privacy policies, procedures, and processes have been developed and enforced among IT team members and other employees, as needed.| Enforcing robust privacy policies ensures consistent protection of personal and sensitive data, aligning with regulatory standards and minimizing the risk of data misuse or breaches. |
+
+### Payment Card Industry Data Security Standard (PCI DSS)
+PCI DSS is an international security standard designed to ensure that organizations storing, accepting, processing, and transmitting credit card information do so in a secure environment. Adhering to PCI DSS is crucial for Botium Toys as they handle online and in-person payments and store customer credit card information internationally. Non-compliance can result in severe consequences such as monetary fines, forensic audit costs, payment brand restrictions, reputation damage, and potential lawsuits.
+| Practice | Compliant | Comment | Explanation |
+| --- | --- | --- | --- |
+| Only authorized users have access to customers’ credit card information | ❌ | Currently, all employees have access to the company’s internal data. | Restricting access to credit card information to authorized users minimizes the risk of unauthorized access, reducing potential fraud and data breaches. |
+| Credit card information is stored, accepted, processed, and transmitted securely | ❌ | Credit card information is not encrypted and all employees currently have access to internal data, including customers’ credit card information. | Ensuring secure handling of credit card information at all stages prevents interception and misuse, safeguarding customer data and maintaining PCI DSS compliance. |
+| Implement data encryption procedures for credit card transactions | ❌ | The company does not currently use encryption to better ensure the confidentiality of customers’ financial information. | Encrypting credit card transactions protects sensitive data from being accessed or compromised during transmission, enhancing overall security and reducing the risk of breaches. |
+| Adopt secure password management policies | ❌ | Password policies are nominal and no password management system is currently in place. | Enforcing strong password policies ensures that access to systems and sensitive information is protected by robust authentication measures, mitigating the risk of unauthorized access. |
+
+### System and Organizations Controls (SOC Type 1, SOC Type 2)
+SOC 1 and SOC 2 are a series of reports focusing on an organization's internal controls over financial reporting and information security, respectively. SOC 1 evaluates controls relevant to financial reporting, while SOC 2 assesses controls related to security, availability, processing integrity, confidentiality, and privacy. Botium Toys must establish and maintain appropriate user access policies and data protection measures to mitigate risks and ensure the safety of sensitive data.
+| Practice | Compliant | Comment | Explanation |
+| --- | --- | --- | --- |
+| User access policies are established | ❌ | Controls of Least Privilege and separation of duties are not currently in place; all employees have access to internally stored data. | Implementing clear user access policies ensures that only authorized personnel can access sensitive information, reducing the risk of data breaches and unauthorized access. |
+| Sensitive data (PII/SPII) is confidential/private | ❌ | Encryption is not currently used to better ensure the confidentiality of PII/SPII. | Ensuring the confidentiality and privacy of Personally Identifiable Information (PII) and Sensitive Personal Information (SPII) protects individuals' privacy and prevents misuse of their data. |
+| Data integrity ensures consistency, completeness, and accuracy | ✔ | Data integrity is in place. | Maintaining data integrity safeguards against unauthorized alterations, ensuring that data remains reliable and accurate for decision-making and operational purposes. |
+| Data is available to authorized individuals | ❌ | While data is available to all employees, authorization needs to be limited to only the individuals who need access to it to do their jobs. | Ensuring data availability to authorized users maintains operational efficiency and supports timely decision-making while preventing unauthorized access or disruptions. |
