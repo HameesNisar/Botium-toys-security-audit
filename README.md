@@ -137,7 +137,7 @@ SOC 1 and SOC 2 are a series of reports focusing on an organization's internal c
 Please review the following information regarding the Botium Toys internal audit scope, goals, critical findings, summary and recommendations.
 
 **Scope**<br>
-The audit will encompass the following systems: *entire security posture of the organization *. It will evaluate:<br>
+The audit will encompass the following systems: *entire security posture of the organization*. It will evaluate:<br>
 • Existing user permissions<br>
 • Implemented controls<br>
 • Procedures and protocols currently in place<br>
